@@ -4,6 +4,13 @@ server:
     context-path: /fraud-service
 
 spring:
+  # When we have an auth server for fraud service, we can activte this oauth2 setup, uth Jack
+  # also comment out sprign security dependencies inside the pom file
+  #  security:
+  #    oauth2:
+  #      resourceserver:
+  #        jwt:
+  #          issuer-uri: http://localhost:9000
   application:
     name: fraud-engine-service
   data:
